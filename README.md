@@ -56,5 +56,7 @@ menu.insertItem(title, {
 
 ## Notes
 You may want to see a demo page at http://johnmave126.github.io/osu-menu/
+
 Since the design is originally from osu! developed by peppy, the LICENSE of this project may change from time to time if I am requested to do so.
+
 Finally, if you are a developer of other jQuery Plugins, you are cordily invited to polish my code.
