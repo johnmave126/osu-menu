@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>osu! style menu demo</title>
+
+	<link rel="stylesheet" href="jquery.osumenu.css">
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+	<script src="jquery.smooth-scroll.min.js"></script>
+	<script src="jquery.osumenu.js"></script>
+
+	<style>
+	body {
+		overflow: hidden;
+	}
+	.right-panel {
+		position: absolute;
+		height: 100%;
+		right: 0;
+		width: 40%;
+	}
+	</style>
+	<script>
+	var menu;
+	$(function() {
+		menu = $('.right-panel').OSUMenu({
+			defaultCallback: function() {
+				$('.panel').text(this.textContent);
+			}
+		}).data("OSUMenu");
+	});
+	</script>
+</head>
+<body>
+	<div class="panel">
+		This is a simple demo page for osu! style menu.
+	</div>
+	<div class="right-panel osu-wrapper">
+		<div class="osu-top"></div>
+		<ul class="osu-list-wrapper">
+			<li class="osu-item">
+				<div class="osu-item-title">Test1</div>
+				<div class="osu-item-subtitle">Testing</div>
+			</li>
+			<li class="osu-item">
+				<div class="osu-item-title">Test2</div>
+				<div class="osu-item-subtitle">Testing</div>
+			</li>
+			<li class="osu-item">
+				<div class="osu-item-title">Test3</div>
+				<div class="osu-item-subtitle">Testing</div>
+			</li>
+			<li class="osu-item">
+				<div class="osu-item-title">Test4</div>
+				<div class="osu-item-subtitle">Testing</div>
+			</li>
+			<li class="osu-item osu-blue">
+				<div class="osu-item-title">Test5</div>
+				<div class="osu-item-subtitle">Testing</div>
+			</li>
+			<li class="osu-item osu-blue">
+				<div class="osu-item-title">Test6</div>
+				<div class="osu-item-subtitle">Testing</div>
+			</li>
+			<li class="osu-item osu-red">
+				<div class="osu-item-title">Test7</div>
+				<div class="osu-item-subtitle">Testing</div>
+			</li>
+		</ul>
+		<div class="osu-spacer"></div>
+	</div>
+</body>
+</html>
