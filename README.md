@@ -34,6 +34,7 @@
 		activeItem: ".osu-selected", // The item in the list which is selected
 	}
 }
+```
 
 #### Insert Item
 First you need to grab the menu object
